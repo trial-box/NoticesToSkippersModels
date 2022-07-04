@@ -7,7 +7,7 @@ extension RIS   {
 }
 
 extension RIS.FairwayTrafficMessage {
-    public struct Detail: Codable {
+    open class Detail: Codable {
         public init(id: Int?, filename: String?, year: Int?, number: Int?, serialNumber: Int?, subjectCode: SubjectCodeTypes?, contents: String?, source: String?, reasonCode: ReasonCodeTypes?, communications: [RIS.FairwayTrafficMessage.Communication]?, fairwaySections: [RIS.FairwayTrafficMessage.FairwaySection]?, from: String?, originator: String?, countryCode: CountryCodeTypes?, languageCode: LanguageCodeTypes?, dateIssue: Date?, targetGroupCode: String?, directionCode: String?, dateStart: Date?, dateEnd: Date?) {
             self.id = id
             self.filename = filename
